@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Order</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        input, button {
+            margin: 6px;
+            padding: 6px;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🧾 Staff Order</h2>
+
+<h3>Place Order</h3>
+<input id="pid" placeholder="Product ID">
+<input id="qty" placeholder="Quantity">
+<button onclick="placeOrder()">Order</button>
+
+<h3>Available Products</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Available Qty</th>
+        </tr>
+    </thead>
+    <tbody id="staffTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
